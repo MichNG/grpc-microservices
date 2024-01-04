@@ -21,8 +21,10 @@
 go.work
 
 .idea
-**/nohup.out
-**/cert
-**/*.pb.go
-**/*_grpc.pb.go
-**/.DS_Store
+.DS_Store
+/**/nohup.out
+/**/cert
+/**/*.pb.go
+/**/*_grpc.pb.go
+/**/.DS_Store
+/**/password.txt
