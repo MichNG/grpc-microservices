@@ -12,7 +12,7 @@ import (
 func main() {
 	dbAdapter, err := db.NewAdapter(config.GetDataSourceURL())
 	if err != nil {
-		log.Fatalf("Failed to connect to database. Error %v", err)
+		log.Fatalf("Failed to connect to database. Error: %v", err)
 	}
 
 	paymentAdapter, err := payment.NewAdapter(config.GetPaymentServiceUrl())
