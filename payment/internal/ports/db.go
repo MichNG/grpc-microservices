@@ -1,11 +1,10 @@
 package ports
 
 import (
-	"context"
 	"github.com/MichNG/grpc-microservices/payment/internal/application/domain"
 )
 
 type DBPort interface {
-	Get(ctx context.Context, id string) (domain.Payment, error)
-	Save(ctx context.Context, payment *domain.Payment) error
+	Get(id string) (domain.Payment, error)
+	Save(payment *domain.Payment) error
 }
